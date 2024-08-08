@@ -66,40 +66,20 @@ body {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: var(--background-10);
-  color: var(--text-10);
+  background-color: var(--background-20);
+  color: var(--text-20);
   min-height: 100vh;
+  max-height: 100vh;
   min-width: 320px;
   width: 100vw;
   margin: 0 auto;
   padding: 0;
+  font-size: 100%;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Ruda', serif;
   font-weight: 700;
-}
-
-html {font-size: 100%;} /* 16px */
-
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 0.750rem; /* 12px */}
-
-nav ul {
-  list-style: none;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
 }
 
 main {
@@ -143,48 +123,50 @@ a:hover {
   font-style: normal;
 }
 
-.welcome {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
 .welcome-text {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.welcome-title {
-  width: 350px;
-  margin: 0 auto;
+.title-band {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex: 0;
+}
+
+.title {
+  font-size: 7.215vmin;
+  text-shadow: 2px 2px 6px rgba(39,38,38,0.3);
 }
 
 .cup {
   margin-right: -1.5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.call {
+  width: 100%;
+  font-size: 2.24vmin;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(39,38,38,0.3);
+}
+
+.caption {
+  font-size: 2.11vmin;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 6px rgba(39,38,38,0.3);
 }
 
 .dreamscape {
-  position: relative;
-  bottom: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
   box-shadow: 17px 14px 61px -10px rgba(21,19,19,0.69);
   -webkit-box-shadow: 17px 14px 61px -10px rgba(21,19,19,0.69);
   -moz-box-shadow: 17px 14px 61px -10px rgba(21,19,19,0.69);
 }
-
-.figcaption {
-  position: relative;
-  bottom: 4rem;
-}
-
