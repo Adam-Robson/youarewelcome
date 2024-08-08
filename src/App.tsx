@@ -1,14 +1,14 @@
-import bubbles from './assets/ll.png';
-import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import NotFound from './components/NotFound';
 
 export default function App() {
-  return (
-    <main>
-      <div className="welcome">
-        <h1 className="playwrite-ng-modern-ll greeting">you are welcome</h1>
-        <img src={bubbles} alt="dreamscape" className="image bubble" />
-        <h2 className="playwrite-ng-modern-ll">by Adam Robson</h2>
-      </div>
-    </main>
-  )
+return (
+  <Routes>
+    <Route path="/projects" element={<Projects />} />
+    <Route path="/" element={<Home />} />
+    <Route path="*" element={<NotFound />} />
+  </Routes>
+)
 }
